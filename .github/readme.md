@@ -1,5 +1,5 @@
 
 ## Hxr
 
-This template is for hooking function for Unity games (il2cpp)
+Template for function hooking (internal hack) in unity games
 
