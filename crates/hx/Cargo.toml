@@ -1,0 +1,29 @@
+[package]
+name = "hx"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+retour = "0.1.0"
+
+
+[dependencies.windows]
+version = "0.44.0"
+features = [
+  "Win32_UI_WindowsAndMessaging",
+    
+  # Dx api
+  # "Win32_Graphics_Dxgi_Common",
+  # "Win32_Graphics_Direct3D9",
+  # "Win32_Graphics_Dxgi",
+  # "Win32_Graphics_Gdi",
+  
+  "Win32_System_Console",
+  "Win32_Foundation",
+	"Win32_System_LibraryLoader"
+]
